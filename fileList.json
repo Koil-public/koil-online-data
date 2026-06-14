@@ -722,11 +722,11 @@
     {
         "path": "sys/design/default/audio",
         "name": "title_screen_music_lunari.ogg",
-        "url": "https://raw.githubusercontent.com/SpiritXIV/koil-online-data/main/content/sys/design/audio/title_screen_music_bit_lunari.ogg"
+        "url": "https://raw.githubusercontent.com/SpiritXIV/koil-online-data/main/content/sys/design/audio/title_screen_music_lunari.ogg"
     },
     {
         "path": "sys/design/default/audio",
         "name": "title_screen_music_grymm.ogg",
-        "url": "https://raw.githubusercontent.com/SpiritXIV/koil-online-data/main/content/sys/design/audio/title_screen_music_bit_grymm.ogg"
+        "url": "https://raw.githubusercontent.com/SpiritXIV/koil-online-data/main/content/sys/design/audio/title_screen_music_grymm.ogg"
     }
 ]
