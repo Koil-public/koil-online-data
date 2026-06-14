@@ -1,5 +1,5 @@
 {
-  "Press the Switch config button": "down at the bottom bar.",
+  "Press the Switch config button": "in the top right corner of the screen",
   "rectConfig": [
     "./koil/sys/config.json",
     "./koil/sys/design/default/design.json"
