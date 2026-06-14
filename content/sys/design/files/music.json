@@ -209,6 +209,18 @@
       "fileSuffix": "_watchtower.ogg",
       "title": "Watchtower",
       "artist": "Bashful"
+    },
+    {
+      "tags": ["lunari"],
+      "fileSuffix": "_lunari.ogg",
+      "title": "Lunari Game Title Screen",
+      "artist": "Bashful & Fyrmite"
+    },
+    {
+      "tags": ["grymm"],
+      "fileSuffix": "_grymm.ogg",
+      "title": "Lunari Game Title Screen",
+      "artist": "Bashful & Fyrmite"
     }
   ]
 }
