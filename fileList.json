@@ -728,5 +728,20 @@
         "path": "sys/design/default/audio",
         "name": "title_screen_music_grymm.ogg",
         "url": "https://raw.githubusercontent.com/Koil-public/koil-online-data/main/content/sys/design/audio/title_screen_music_grymm.ogg"
+    },
+    {
+        "path": "sys/design/default/audio",
+        "name": "title_screen_music_tdbtd.ogg",
+        "url": "https://raw.githubusercontent.com/Koil-public/koil-online-data/main/content/sys/design/audio/title_screen_music_tdbtd.ogg"
+    },
+    {
+        "path": "sys/design/default/audio",
+        "name": "title_screen_music_enough.ogg",
+        "url": "https://raw.githubusercontent.com/Koil-public/koil-online-data/main/content/sys/design/audio/title_screen_music_enough.ogg"
+    },
+    {
+        "path": "sys/design/default/audio",
+        "name": "title_screen_music_abandoned.ogg",
+        "url": "https://raw.githubusercontent.com/Koil-public/koil-online-data/main/content/sys/design/audio/title_screen_music_abandoned.ogg"
     }
 ]
