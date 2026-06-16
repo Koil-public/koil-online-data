@@ -49,6 +49,12 @@
       "artist": "Bashful"
     },
     {
+      "tags": ["tdbtd", "fallen city", "fallen_city"],
+      "fileSuffix": "_tdbtd.ogg",
+      "title": "Fallen City (unreleased)",
+      "artist": "Bashful"
+    },
+    {
       "tags": ["split", "inpart", "in part", "in_part"],
       "fileSuffix": "_split.ogg",
       "title": "In Part (unreleased)",
@@ -190,6 +196,24 @@
       "tags": ["bit crush", "bit_crush"],
       "fileSuffix": "_bit_crush.ogg",
       "title": "Bit crush (unreleased)",
+      "artist": "Bashful"
+    },
+    {
+      "tags": ["enough"],
+      "fileSuffix": "_enough.ogg",
+      "title": "Enough (unreleased)",
+      "artist": "Bashful"
+    },
+    {
+      "tags": ["abandoned"],
+      "fileSuffix": "_abandoned.ogg",
+      "title": "Abandoned (unreleased)",
+      "artist": "Bashful"
+    },
+    {
+      "tags": ["space_odyssey", "space odyssey"],
+      "fileSuffix": "_space_odyssey.ogg",
+      "title": "Space Odyssey (unreleased)",
       "artist": "Bashful"
     },
     {
