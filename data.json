@@ -57,7 +57,7 @@
   "releases": [
      {
         "name": "Koil 0.70.26 Unfinished Update",
-        "version": "0.70.26-unfinished.12",
+        "version": "0.70.26-unfinished.13",
         "branch": "unfinished",
         "githubPath": ".unfinished",
         "date": "2026-05-07",
@@ -71,7 +71,7 @@
         "files": [
           {
             "label": "Unfinished build",
-            "fileName": "koil-0.70.26-unfinished.12.jar"
+            "fileName": "koil-0.70.26-unfinished.13.jar"
           }
         ],
         "sections": [
@@ -268,6 +268,13 @@
               "Added chat attachments for images, animated GIFs, audio, video, text files, code files, and general files with clipboard, pasted path, and file selection support.",
               "Added private conversation filtering with selectable targets, multiline whispers, private attachments, recent conversation tracking, unread indicators, and options to dim or hide unrelated chat.",
               "Added rich text interactions including spoilers, masked web and command links, hover information, contextual action menus, timestamps, message bars, and message type indicators."
+            ]
+          },
+          {
+            "title": "Local Model and Improvments to Koils Intelligence Layer",
+            "items": [
+              "Added the /model command which you can get started by running /model list, then select your model, then either run /ask<prompt> or turn on the automation system by running /automate",
+              "Im intentonally being secret about it cause the automation system and the model are really useful till later..."
             ]
           }
         ]
