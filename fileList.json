@@ -748,5 +748,25 @@
         "path": "sys/design/default/audio",
         "name": "title_screen_music_space_odyssey.ogg",
         "url": "https://raw.githubusercontent.com/Koil-public/koil-online-data/main/content/sys/design/audio/title_screen_music_space_odyssey.ogg"
+    },
+    {
+        "path": "sys/design/default/particles",
+        "name": "minecraft_advanced.json",
+        "url": "https://raw.githubusercontent.com/Koil-public/koil-online-data/main/content/sys/design/particles/minecraft_advanced.json"
+    },
+    {
+        "path": "sys/design/default/particles",
+        "name": "minecraft_compound.json",
+        "url": "https://raw.githubusercontent.com/Koil-public/koil-online-data/main/content/sys/design/particles/minecraft_compound.json"
+    },
+    {
+        "path": "sys/design/default/particles",
+        "name": "minecraft_core.json",
+        "url": "https://raw.githubusercontent.com/Koil-public/koil-online-data/main/content/sys/design/particles/minecraft_core.json"
+    },
+    {
+        "path": "sys/design/default/particles",
+        "name": "minecraft_expansion.json",
+        "url": "https://raw.githubusercontent.com/Koil-public/koil-online-data/main/content/sys/design/particles/minecraft_expansion.json"
     }
 ]
