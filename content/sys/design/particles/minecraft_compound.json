@@ -1,0 +1,173 @@
+{
+  "schema": 4,
+  "description": "Koil built-in UI particle definitions. Java contains reusable interpreters only. Uses dynamic texture/frame dimensions, 0.50 second spawn collision immunity, animated textures, simulation layers, and data-driven material interaction.",
+  "effects": [
+    {
+      "id": "bouncing_block_bomb",
+      "theme_color": "#A7A7A7",
+      "program": "bounce_bomb",
+      "weight": 2,
+      "pulse": true,
+      "sound": "minecraft:block.stone.hit",
+      "projectile_count": 3,
+      "bounces": [
+        2,
+        6
+      ],
+      "projectile_pixels": [
+        11,
+        16
+      ],
+      "projectile_life": 4.2,
+      "front_ratio": 0.55,
+      "blocks": [
+        "minecraft:stone",
+        "minecraft:cobblestone",
+        "minecraft:dirt",
+        "minecraft:oak_planks",
+        "minecraft:deepslate",
+        "minecraft:obsidian",
+        "minecraft:diamond_block",
+        "minecraft:redstone_block"
+      ],
+      "explode_count": 38,
+      "explode_sprite": "generic",
+      "spawn_invulnerability": 0.5,
+      "texture_auto_size": true,
+      "animation_speed": 1.0,
+      "animation_loop": true,
+      "animation_interpolate": true,
+      "simulation_layer": 0,
+      "cross_layer_interactions": false,
+      "interaction_layers": "same"
+    },
+    {
+      "id": "firework_rocket_show",
+      "theme_color": "#FFE45E",
+      "program": "firework_show",
+      "weight": 2,
+      "pulse": true,
+      "sound": "minecraft:entity.firework_rocket.launch",
+      "detonate_sound": "minecraft:entity.firework_rocket.blast",
+      "rocket_count": [
+        1,
+        3
+      ],
+      "projectile_texture": "minecraft:textures/item/firework_rocket.png",
+      "palette": [
+        "#FF5555",
+        "#55FF55",
+        "#5555FF",
+        "#FFFF55",
+        "#FF55FF",
+        "#55FFFF",
+        "#FFFFFF",
+        "#FFAA00"
+      ],
+      "spawn_invulnerability": 0.5,
+      "texture_auto_size": true,
+      "animation_speed": 1.0,
+      "animation_loop": true,
+      "animation_interpolate": true,
+      "simulation_layer": 0,
+      "cross_layer_interactions": false,
+      "interaction_layers": "same"
+    },
+    {
+      "id": "slime_split_bounce",
+      "theme_color": "#74C94E",
+      "program": "split_bounce",
+      "weight": 2,
+      "pulse": true,
+      "sound": "minecraft:block.slime_block.hit",
+      "bounces": [
+        2,
+        4
+      ],
+      "split_count": 16,
+      "projectile_texture": "minecraft:textures/block/slime_block.png",
+      "spawn_invulnerability": 0.5,
+      "texture_auto_size": true,
+      "animation_speed": 1.0,
+      "animation_loop": true,
+      "animation_interpolate": true,
+      "simulation_layer": 0,
+      "cross_layer_interactions": false,
+      "interaction_layers": "same"
+    },
+    {
+      "id": "ender_pearl_ricochet",
+      "theme_color": "#6FC9A5",
+      "program": "ricochet_burst",
+      "weight": 2,
+      "pulse": true,
+      "sound": "minecraft:entity.enderman.teleport",
+      "projectile_count": 3,
+      "bounces": [
+        1,
+        3
+      ],
+      "projectile_texture": "minecraft:textures/item/ender_pearl.png",
+      "trail_sprite": "portal",
+      "explode_sprite": "portal",
+      "explode_count": 40,
+      "spawn_invulnerability": 0.5,
+      "texture_auto_size": true,
+      "animation_speed": 1.0,
+      "animation_loop": true,
+      "animation_interpolate": true,
+      "simulation_layer": 0,
+      "cross_layer_interactions": false,
+      "interaction_layers": "same"
+    },
+    {
+      "id": "tnt_bounce_fuse",
+      "theme_color": "#D84A35",
+      "program": "fuse_bounce",
+      "weight": 2,
+      "pulse": true,
+      "sound": "minecraft:entity.tnt.primed",
+      "detonate_sound": "minecraft:entity.generic.explode",
+      "bounces": [
+        2,
+        5
+      ],
+      "projectile_texture": "minecraft:textures/block/tnt_side.png",
+      "trail_sprite": "big_smoke",
+      "explode_sprite": "firework",
+      "explode_count": 58,
+      "spawn_invulnerability": 0.5,
+      "texture_auto_size": true,
+      "animation_speed": 1.0,
+      "animation_loop": true,
+      "animation_interpolate": true,
+      "simulation_layer": 0,
+      "cross_layer_interactions": false,
+      "interaction_layers": "same"
+    },
+    {
+      "id": "amethyst_shatter_bomb",
+      "theme_color": "#B48AE6",
+      "program": "shatter_bounce",
+      "weight": 2,
+      "pulse": true,
+      "sound": "minecraft:block.amethyst_block.chime",
+      "projectile_count": 2,
+      "bounces": [
+        2,
+        5
+      ],
+      "projectile_texture": "minecraft:textures/block/amethyst_block.png",
+      "explode_sprite": "glitter",
+      "explode_count": 44,
+      "spawn_invulnerability": 0.5,
+      "texture_auto_size": true,
+      "animation_speed": 1.0,
+      "animation_loop": true,
+      "animation_interpolate": true,
+      "simulation_layer": 0,
+      "cross_layer_interactions": false,
+      "interaction_layers": "same"
+    }
+  ]
+}

@@ -1,0 +1,1636 @@
+{
+  "schema": 4,
+  "description": "Koil built-in UI particle definitions. Java contains reusable interpreters only. Uses dynamic texture/frame dimensions, 0.50 second spawn collision immunity, animated textures, simulation layers, and data-driven material interaction.",
+  "effects": [
+    {
+      "id": "poof",
+      "theme_color": "#D8D8D8",
+      "weight": 2,
+      "program": "float",
+      "pulse": true,
+      "count": 30,
+      "rate": 5,
+      "face_chance": 0.74,
+      "front_ratio": 0.34,
+      "speed": [
+        8,
+        38
+      ],
+      "life": [
+        1.4,
+        3.2
+      ],
+      "sprite": "big_smoke",
+      "shape": "pixel",
+      "size_band": "large",
+      "visual_pixels": [
+        9,
+        14
+      ],
+      "gravity": -7,
+      "drag": 0.955,
+      "collide_buttons": false,
+      "collide_screen": true,
+      "protect_target": false,
+      "sound": "minecraft:entity.generic.explode",
+      "visual_family": "smoke",
+      "material": "smoke",
+      "spawn_invulnerability": 0.5,
+      "texture_auto_size": true,
+      "animation_speed": 1.0,
+      "animation_loop": true,
+      "animation_interpolate": true,
+      "simulation_layer": 0,
+      "cross_layer_interactions": false,
+      "interaction_layers": "same"
+    },
+    {
+      "id": "enchanted_hit",
+      "theme_color": "#D3C7FF",
+      "weight": 2,
+      "program": "float",
+      "pulse": true,
+      "count": 30,
+      "rate": 4,
+      "face_chance": 0.74,
+      "front_ratio": 0.34,
+      "speed": [
+        18,
+        55
+      ],
+      "life": [
+        1.0,
+        2.3
+      ],
+      "sprite": "sga",
+      "shape": "pixel",
+      "size_band": "normal",
+      "visual_pixels": [
+        7,
+        10
+      ],
+      "gravity": -5,
+      "drag": 0.972,
+      "collide_buttons": false,
+      "collide_screen": true,
+      "protect_target": false,
+      "sound": "minecraft:block.enchantment_table.use",
+      "visual_family": "enchant_glyph",
+      "material": "enchant",
+      "behavior": "spiral",
+      "spawn_invulnerability": 0.5,
+      "texture_auto_size": true,
+      "animation_speed": 1.0,
+      "animation_loop": true,
+      "animation_interpolate": true,
+      "simulation_layer": 0,
+      "cross_layer_interactions": false,
+      "interaction_layers": "same"
+    },
+    {
+      "id": "damage_indicator",
+      "theme_color": "#FFFFFF",
+      "weight": 2,
+      "program": "burst",
+      "pulse": true,
+      "count": 30,
+      "rate": 0,
+      "face_chance": 0.74,
+      "front_ratio": 0.34,
+      "speed": [
+        50,
+        135
+      ],
+      "life": [
+        0.55,
+        1.15
+      ],
+      "sprite": "damage",
+      "shape": "crit",
+      "size_band": "normal",
+      "visual_pixels": [
+        5,
+        8
+      ],
+      "gravity": 30,
+      "drag": 0.968,
+      "collide_buttons": true,
+      "collide_screen": true,
+      "protect_target": false,
+      "sound": "minecraft:entity.player.attack.crit",
+      "visual_family": "crit",
+      "spawn_invulnerability": 0.5,
+      "texture_auto_size": true,
+      "animation_speed": 1.0,
+      "animation_loop": true,
+      "animation_interpolate": true,
+      "simulation_layer": 0,
+      "cross_layer_interactions": false,
+      "interaction_layers": "same"
+    },
+    {
+      "id": "angry_villager",
+      "theme_color": "#FFFFFF",
+      "weight": 2,
+      "program": "burst",
+      "pulse": true,
+      "count": 30,
+      "rate": 0,
+      "face_chance": 0.74,
+      "front_ratio": 0.34,
+      "speed": [
+        35,
+        105
+      ],
+      "life": [
+        0.8,
+        1.8
+      ],
+      "sprite": "generic",
+      "shape": "pixel",
+      "size_band": "normal",
+      "visual_pixels": [
+        5,
+        9
+      ],
+      "gravity": 45,
+      "drag": 0.98,
+      "collide_buttons": true,
+      "collide_screen": true,
+      "protect_target": false,
+      "sound": "minecraft:entity.villager.yes",
+      "spawn_invulnerability": 0.5,
+      "texture_auto_size": true,
+      "animation_speed": 1.0,
+      "animation_loop": true,
+      "animation_interpolate": true,
+      "simulation_layer": 0,
+      "cross_layer_interactions": false,
+      "interaction_layers": "same"
+    },
+    {
+      "id": "witch_spell",
+      "theme_color": "#A64AC9",
+      "weight": 2,
+      "program": "burst",
+      "pulse": true,
+      "count": 30,
+      "rate": 0,
+      "face_chance": 0.74,
+      "front_ratio": 0.34,
+      "speed": [
+        35,
+        105
+      ],
+      "life": [
+        0.8,
+        1.8
+      ],
+      "sprite": "generic",
+      "shape": "pixel",
+      "size_band": "normal",
+      "visual_pixels": [
+        5,
+        9
+      ],
+      "gravity": 45,
+      "drag": 0.98,
+      "collide_buttons": true,
+      "collide_screen": true,
+      "protect_target": false,
+      "spawn_invulnerability": 0.5,
+      "texture_auto_size": true,
+      "animation_speed": 1.0,
+      "animation_loop": true,
+      "animation_interpolate": true,
+      "simulation_layer": 0,
+      "cross_layer_interactions": false,
+      "interaction_layers": "same"
+    },
+    {
+      "id": "potion_effect",
+      "theme_color": "#7AEBE8",
+      "weight": 2,
+      "program": "burst",
+      "pulse": true,
+      "count": 30,
+      "rate": 0,
+      "face_chance": 0.74,
+      "front_ratio": 0.34,
+      "speed": [
+        35,
+        105
+      ],
+      "life": [
+        0.8,
+        1.8
+      ],
+      "sprite": "generic",
+      "shape": "pixel",
+      "size_band": "normal",
+      "visual_pixels": [
+        5,
+        9
+      ],
+      "gravity": 45,
+      "drag": 0.98,
+      "collide_buttons": true,
+      "collide_screen": true,
+      "protect_target": false,
+      "spawn_invulnerability": 0.5,
+      "texture_auto_size": true,
+      "animation_speed": 1.0,
+      "animation_loop": true,
+      "animation_interpolate": true,
+      "simulation_layer": 0,
+      "cross_layer_interactions": false,
+      "interaction_layers": "same"
+    },
+    {
+      "id": "instant_effect",
+      "theme_color": "#F1F1F1",
+      "weight": 2,
+      "program": "burst",
+      "pulse": true,
+      "count": 30,
+      "rate": 0,
+      "face_chance": 0.74,
+      "front_ratio": 0.34,
+      "speed": [
+        35,
+        105
+      ],
+      "life": [
+        0.8,
+        1.8
+      ],
+      "sprite": "generic",
+      "shape": "pixel",
+      "size_band": "normal",
+      "visual_pixels": [
+        5,
+        9
+      ],
+      "gravity": 45,
+      "drag": 0.98,
+      "collide_buttons": true,
+      "collide_screen": true,
+      "protect_target": false,
+      "spawn_invulnerability": 0.5,
+      "texture_auto_size": true,
+      "animation_speed": 1.0,
+      "animation_loop": true,
+      "animation_interpolate": true,
+      "simulation_layer": 0,
+      "cross_layer_interactions": false,
+      "interaction_layers": "same"
+    },
+    {
+      "id": "electric_spark",
+      "theme_color": "#F6D45E",
+      "weight": 2,
+      "program": "burst",
+      "pulse": true,
+      "count": 30,
+      "rate": 0,
+      "face_chance": 0.74,
+      "front_ratio": 0.4,
+      "speed": [
+        55,
+        150
+      ],
+      "life": [
+        0.7,
+        1.8
+      ],
+      "sprite": "firework",
+      "shape": "spark",
+      "size_band": "small",
+      "visual_pixels": [
+        4,
+        7
+      ],
+      "gravity": 58,
+      "drag": 0.982,
+      "collide_buttons": true,
+      "collide_screen": true,
+      "protect_target": false,
+      "sound": "minecraft:block.redstone_torch.burnout",
+      "visual_family": "firework_spark",
+      "material": "firework",
+      "spawn_invulnerability": 0.5,
+      "texture_auto_size": true,
+      "animation_speed": 1.0,
+      "animation_loop": true,
+      "animation_interpolate": true,
+      "simulation_layer": 0,
+      "cross_layer_interactions": false,
+      "interaction_layers": "same"
+    },
+    {
+      "id": "glow_squid_ink",
+      "theme_color": "#62DDE4",
+      "weight": 2,
+      "program": "burst",
+      "pulse": true,
+      "count": 30,
+      "rate": 0,
+      "face_chance": 0.74,
+      "front_ratio": 0.34,
+      "speed": [
+        35,
+        105
+      ],
+      "life": [
+        0.8,
+        1.8
+      ],
+      "sprite": "generic",
+      "shape": "pixel",
+      "size_band": "normal",
+      "visual_pixels": [
+        5,
+        9
+      ],
+      "gravity": 45,
+      "drag": 0.98,
+      "collide_buttons": true,
+      "collide_screen": true,
+      "protect_target": false,
+      "spawn_invulnerability": 0.5,
+      "texture_auto_size": true,
+      "animation_speed": 1.0,
+      "animation_loop": true,
+      "animation_interpolate": true,
+      "simulation_layer": 0,
+      "cross_layer_interactions": false,
+      "interaction_layers": "same"
+    },
+    {
+      "id": "glow_motes",
+      "theme_color": "#E8FC85",
+      "weight": 2,
+      "program": "burst",
+      "pulse": true,
+      "count": 30,
+      "rate": 0,
+      "face_chance": 0.74,
+      "front_ratio": 0.34,
+      "speed": [
+        35,
+        105
+      ],
+      "life": [
+        0.8,
+        1.8
+      ],
+      "sprite": "generic",
+      "shape": "pixel",
+      "size_band": "normal",
+      "visual_pixels": [
+        5,
+        9
+      ],
+      "gravity": 45,
+      "drag": 0.98,
+      "collide_buttons": true,
+      "collide_screen": true,
+      "protect_target": false,
+      "spawn_invulnerability": 0.5,
+      "texture_auto_size": true,
+      "animation_speed": 1.0,
+      "animation_loop": true,
+      "animation_interpolate": true,
+      "simulation_layer": 0,
+      "cross_layer_interactions": false,
+      "interaction_layers": "same"
+    },
+    {
+      "id": "soul_motes",
+      "theme_color": "#61D5C8",
+      "weight": 2,
+      "program": "float",
+      "pulse": true,
+      "count": 30,
+      "rate": 4,
+      "face_chance": 0.74,
+      "front_ratio": 0.34,
+      "speed": [
+        15,
+        45
+      ],
+      "life": [
+        1.1,
+        2.3
+      ],
+      "sprite": "soul",
+      "shape": "soul_flame",
+      "size_band": "normal",
+      "visual_pixels": [
+        7,
+        10
+      ],
+      "gravity": -20,
+      "drag": 0.965,
+      "collide_buttons": true,
+      "collide_screen": true,
+      "protect_target": false,
+      "sound": "minecraft:block.soul_sand.hit",
+      "visual_family": "soul_flame",
+      "material": "soul_fire",
+      "spawn_invulnerability": 0.5,
+      "texture_auto_size": true,
+      "animation_speed": 1.0,
+      "animation_loop": true,
+      "animation_interpolate": true,
+      "simulation_layer": 0,
+      "cross_layer_interactions": false,
+      "interaction_layers": "same"
+    },
+    {
+      "id": "sculk_soul",
+      "theme_color": "#4CD7CC",
+      "weight": 2,
+      "program": "float",
+      "pulse": true,
+      "count": 30,
+      "rate": 4,
+      "face_chance": 0.74,
+      "front_ratio": 0.34,
+      "speed": [
+        25,
+        90
+      ],
+      "life": [
+        0.9,
+        2
+      ],
+      "sprite": "sculk_soul",
+      "shape": "pixel",
+      "size_band": "normal",
+      "visual_pixels": [
+        7,
+        11
+      ],
+      "gravity": -5,
+      "drag": 0.97,
+      "collide_buttons": true,
+      "collide_screen": true,
+      "protect_target": false,
+      "sound": "minecraft:block.sculk_sensor.clicking",
+      "visual_family": "sculk_charge",
+      "spawn_invulnerability": 0.5,
+      "texture_auto_size": true,
+      "animation_speed": 1.0,
+      "animation_loop": true,
+      "animation_interpolate": true,
+      "simulation_layer": 0,
+      "cross_layer_interactions": false,
+      "interaction_layers": "same"
+    },
+    {
+      "id": "shriek",
+      "theme_color": "#8CD8D5",
+      "weight": 2,
+      "program": "burst",
+      "pulse": true,
+      "count": 30,
+      "rate": 0,
+      "face_chance": 0.74,
+      "front_ratio": 0.34,
+      "speed": [
+        35,
+        105
+      ],
+      "life": [
+        0.8,
+        1.8
+      ],
+      "sprite": "generic",
+      "shape": "pixel",
+      "size_band": "normal",
+      "visual_pixels": [
+        5,
+        9
+      ],
+      "gravity": 45,
+      "drag": 0.98,
+      "collide_buttons": true,
+      "collide_screen": true,
+      "protect_target": false,
+      "spawn_invulnerability": 0.5,
+      "texture_auto_size": true,
+      "animation_speed": 1.0,
+      "animation_loop": true,
+      "animation_interpolate": true,
+      "simulation_layer": 0,
+      "cross_layer_interactions": false,
+      "interaction_layers": "same"
+    },
+    {
+      "id": "sonic_boom",
+      "theme_color": "#7FE6E3",
+      "weight": 2,
+      "program": "pulse",
+      "pulse": true,
+      "count": 16,
+      "rate": 0,
+      "face_chance": 0.74,
+      "front_ratio": 0.34,
+      "speed": [
+        4,
+        18
+      ],
+      "life": [
+        0.8,
+        1.8
+      ],
+      "sprite": "sonic_boom",
+      "shape": "pixel",
+      "size_band": "normal",
+      "visual_pixels": [
+        12,
+        17
+      ],
+      "gravity": 0,
+      "drag": 0.98,
+      "collide_buttons": false,
+      "collide_screen": true,
+      "protect_target": false,
+      "sound": "minecraft:entity.warden.sonic_boom",
+      "pulse_scale": 1.5,
+      "pulse_duration": 0.55,
+      "spawn_invulnerability": 0.5,
+      "texture_auto_size": true,
+      "animation_speed": 1.0,
+      "animation_loop": true,
+      "animation_interpolate": true,
+      "simulation_layer": 0,
+      "cross_layer_interactions": false,
+      "interaction_layers": "same"
+    },
+    {
+      "id": "vibration",
+      "theme_color": "#79D0CD",
+      "weight": 2,
+      "program": "orbit",
+      "pulse": true,
+      "count": 18,
+      "rate": 0,
+      "face_chance": 0.74,
+      "front_ratio": 0.34,
+      "speed": [
+        35,
+        105
+      ],
+      "life": [
+        0.8,
+        1.5
+      ],
+      "sprite": "vibration",
+      "shape": "pixel",
+      "size_band": "normal",
+      "visual_pixels": [
+        5,
+        9
+      ],
+      "gravity": 45,
+      "drag": 0.98,
+      "collide_buttons": true,
+      "collide_screen": true,
+      "protect_target": false,
+      "behavior": "orbit",
+      "orbit_radius": [
+        22,
+        32
+      ],
+      "force": 44,
+      "spawn_invulnerability": 0.5,
+      "texture_auto_size": true,
+      "animation_speed": 1.0,
+      "animation_loop": true,
+      "animation_interpolate": true,
+      "simulation_layer": 0,
+      "cross_layer_interactions": false,
+      "interaction_layers": "same"
+    },
+    {
+      "id": "nautilus",
+      "theme_color": "#7FE8FF",
+      "weight": 2,
+      "program": "burst",
+      "pulse": true,
+      "count": 30,
+      "rate": 0,
+      "face_chance": 0.74,
+      "front_ratio": 0.34,
+      "speed": [
+        35,
+        105
+      ],
+      "life": [
+        0.8,
+        1.8
+      ],
+      "sprite": "generic",
+      "shape": "pixel",
+      "size_band": "normal",
+      "visual_pixels": [
+        5,
+        9
+      ],
+      "gravity": 45,
+      "drag": 0.98,
+      "collide_buttons": true,
+      "collide_screen": true,
+      "protect_target": false,
+      "spawn_invulnerability": 0.5,
+      "texture_auto_size": true,
+      "animation_speed": 1.0,
+      "animation_loop": true,
+      "animation_interpolate": true,
+      "simulation_layer": 0,
+      "cross_layer_interactions": false,
+      "interaction_layers": "same"
+    },
+    {
+      "id": "splash",
+      "theme_color": "#8DCBFF",
+      "weight": 2,
+      "program": "fall",
+      "pulse": true,
+      "count": 30,
+      "rate": 5,
+      "face_chance": 0.74,
+      "front_ratio": 0.34,
+      "speed": [
+        8,
+        38
+      ],
+      "life": [
+        1.4,
+        3.2
+      ],
+      "sprite": "generic",
+      "shape": "pixel",
+      "size_band": "large",
+      "visual_pixels": [
+        9,
+        14
+      ],
+      "gravity": 16,
+      "drag": 0.955,
+      "collide_buttons": false,
+      "collide_screen": true,
+      "protect_target": false,
+      "sound": "minecraft:entity.fishing_bobber.splash",
+      "visual_family": "smoke",
+      "material": "smoke",
+      "spawn_invulnerability": 0.5,
+      "texture_auto_size": true,
+      "animation_speed": 1.0,
+      "animation_loop": true,
+      "animation_interpolate": true,
+      "simulation_layer": 0,
+      "cross_layer_interactions": false,
+      "interaction_layers": "same"
+    },
+    {
+      "id": "bubble_pop",
+      "theme_color": "#AEE7FF",
+      "weight": 2,
+      "program": "float",
+      "pulse": true,
+      "count": 30,
+      "rate": 8,
+      "face_chance": 0.74,
+      "front_ratio": 0.34,
+      "speed": [
+        12,
+        48
+      ],
+      "life": [
+        0.8,
+        1.8
+      ],
+      "sprite": "bubble_pop",
+      "shape": "pixel",
+      "size_band": "normal",
+      "visual_pixels": [
+        7,
+        11
+      ],
+      "gravity": -22,
+      "drag": 0.965,
+      "collide_buttons": true,
+      "collide_screen": true,
+      "protect_target": false,
+      "sound": "minecraft:entity.fishing_bobber.splash",
+      "visual_family": "bubble",
+      "material": "water",
+      "spawn_invulnerability": 0.5,
+      "texture_auto_size": true,
+      "animation_speed": 1.0,
+      "animation_loop": true,
+      "animation_interpolate": true,
+      "simulation_layer": 0,
+      "cross_layer_interactions": false,
+      "interaction_layers": "same"
+    },
+    {
+      "id": "underwater_bubbles",
+      "theme_color": "#B5E9FF",
+      "weight": 2,
+      "program": "float",
+      "pulse": true,
+      "count": 30,
+      "rate": 8,
+      "face_chance": 0.74,
+      "front_ratio": 0.34,
+      "speed": [
+        12,
+        48
+      ],
+      "life": [
+        0.8,
+        1.8
+      ],
+      "sprite": "bubble",
+      "shape": "pixel",
+      "size_band": "normal",
+      "visual_pixels": [
+        7,
+        11
+      ],
+      "gravity": -22,
+      "drag": 0.965,
+      "collide_buttons": true,
+      "collide_screen": true,
+      "protect_target": false,
+      "sound": "minecraft:entity.fishing_bobber.splash",
+      "visual_family": "bubble",
+      "material": "water",
+      "spawn_invulnerability": 0.5,
+      "texture_auto_size": true,
+      "animation_speed": 1.0,
+      "animation_loop": true,
+      "animation_interpolate": true,
+      "simulation_layer": 0,
+      "cross_layer_interactions": false,
+      "interaction_layers": "same"
+    },
+    {
+      "id": "dripping_water",
+      "theme_color": "#5FA9F5",
+      "weight": 2,
+      "program": "burst",
+      "pulse": true,
+      "count": 30,
+      "rate": 0,
+      "face_chance": 0.74,
+      "front_ratio": 0.34,
+      "speed": [
+        30,
+        100
+      ],
+      "life": [
+        0.8,
+        1.8
+      ],
+      "sprite": "splash",
+      "shape": "drop",
+      "size_band": "normal",
+      "visual_pixels": [
+        6,
+        10
+      ],
+      "gravity": 155,
+      "drag": 0.986,
+      "collide_buttons": true,
+      "collide_screen": true,
+      "protect_target": false,
+      "sound": "minecraft:entity.fishing_bobber.splash",
+      "visual_family": "splash",
+      "material": "water",
+      "spawn_invulnerability": 0.5,
+      "texture_auto_size": true,
+      "animation_speed": 1.0,
+      "animation_loop": true,
+      "animation_interpolate": true,
+      "simulation_layer": 0,
+      "cross_layer_interactions": false,
+      "interaction_layers": "same"
+    },
+    {
+      "id": "dripping_lava",
+      "theme_color": "#FF8A24",
+      "weight": 2,
+      "program": "drip",
+      "pulse": true,
+      "count": 30,
+      "rate": 0,
+      "face_chance": 0.74,
+      "front_ratio": 0.34,
+      "speed": [
+        20,
+        70
+      ],
+      "life": [
+        0.8,
+        1.6
+      ],
+      "sprite": "drip_fall",
+      "shape": "drop",
+      "size_band": "normal",
+      "visual_pixels": [
+        7,
+        10
+      ],
+      "gravity": 150,
+      "drag": 0.98,
+      "collide_buttons": true,
+      "collide_screen": true,
+      "protect_target": false,
+      "sound": "minecraft:block.lava.pop",
+      "visual_family": "lava",
+      "spawn_invulnerability": 0.5,
+      "texture_auto_size": true,
+      "animation_speed": 1.0,
+      "animation_loop": true,
+      "animation_interpolate": true,
+      "simulation_layer": 0,
+      "cross_layer_interactions": false,
+      "interaction_layers": "same"
+    },
+    {
+      "id": "obsidian_tear",
+      "theme_color": "#8D55AA",
+      "weight": 2,
+      "program": "burst",
+      "pulse": true,
+      "count": 30,
+      "rate": 0,
+      "face_chance": 0.74,
+      "front_ratio": 0.34,
+      "speed": [
+        35,
+        105
+      ],
+      "life": [
+        0.8,
+        1.8
+      ],
+      "sprite": "generic",
+      "shape": "pixel",
+      "size_band": "normal",
+      "visual_pixels": [
+        5,
+        9
+      ],
+      "gravity": 45,
+      "drag": 0.98,
+      "collide_buttons": true,
+      "collide_screen": true,
+      "protect_target": false,
+      "spawn_invulnerability": 0.5,
+      "texture_auto_size": true,
+      "animation_speed": 1.0,
+      "animation_loop": true,
+      "animation_interpolate": true,
+      "simulation_layer": 0,
+      "cross_layer_interactions": false,
+      "interaction_layers": "same"
+    },
+    {
+      "id": "white_ash",
+      "theme_color": "#D9D7D2",
+      "weight": 2,
+      "program": "fall",
+      "pulse": true,
+      "count": 30,
+      "rate": 5,
+      "face_chance": 0.74,
+      "front_ratio": 0.34,
+      "speed": [
+        8,
+        38
+      ],
+      "life": [
+        1.4,
+        3.2
+      ],
+      "sprite": "generic",
+      "shape": "pixel",
+      "size_band": "large",
+      "visual_pixels": [
+        9,
+        14
+      ],
+      "gravity": 16,
+      "drag": 0.955,
+      "collide_buttons": false,
+      "collide_screen": true,
+      "protect_target": false,
+      "visual_family": "smoke",
+      "material": "smoke",
+      "spawn_invulnerability": 0.5,
+      "texture_auto_size": true,
+      "animation_speed": 1.0,
+      "animation_loop": true,
+      "animation_interpolate": true,
+      "simulation_layer": 0,
+      "cross_layer_interactions": false,
+      "interaction_layers": "same"
+    },
+    {
+      "id": "ash_fall",
+      "theme_color": "#5B5551",
+      "weight": 2,
+      "program": "fall",
+      "pulse": true,
+      "count": 30,
+      "rate": 5,
+      "face_chance": 0.74,
+      "front_ratio": 0.34,
+      "speed": [
+        8,
+        38
+      ],
+      "life": [
+        1.4,
+        3.2
+      ],
+      "sprite": "generic",
+      "shape": "pixel",
+      "size_band": "large",
+      "visual_pixels": [
+        9,
+        14
+      ],
+      "gravity": 16,
+      "drag": 0.955,
+      "collide_buttons": false,
+      "collide_screen": true,
+      "protect_target": false,
+      "visual_family": "smoke",
+      "material": "smoke",
+      "spawn_invulnerability": 0.5,
+      "texture_auto_size": true,
+      "animation_speed": 1.0,
+      "animation_loop": true,
+      "animation_interpolate": true,
+      "simulation_layer": 0,
+      "cross_layer_interactions": false,
+      "interaction_layers": "same"
+    },
+    {
+      "id": "crimson_spores",
+      "theme_color": "#B63A43",
+      "weight": 2,
+      "program": "burst",
+      "pulse": true,
+      "count": 30,
+      "rate": 0,
+      "face_chance": 0.74,
+      "front_ratio": 0.34,
+      "speed": [
+        35,
+        105
+      ],
+      "life": [
+        0.8,
+        1.8
+      ],
+      "sprite": "generic",
+      "shape": "pixel",
+      "size_band": "normal",
+      "visual_pixels": [
+        5,
+        9
+      ],
+      "gravity": 45,
+      "drag": 0.98,
+      "collide_buttons": true,
+      "collide_screen": true,
+      "protect_target": false,
+      "spawn_invulnerability": 0.5,
+      "texture_auto_size": true,
+      "animation_speed": 1.0,
+      "animation_loop": true,
+      "animation_interpolate": true,
+      "simulation_layer": 0,
+      "cross_layer_interactions": false,
+      "interaction_layers": "same"
+    },
+    {
+      "id": "warped_spores",
+      "theme_color": "#1E8F85",
+      "weight": 2,
+      "program": "burst",
+      "pulse": true,
+      "count": 30,
+      "rate": 0,
+      "face_chance": 0.74,
+      "front_ratio": 0.34,
+      "speed": [
+        35,
+        105
+      ],
+      "life": [
+        0.8,
+        1.8
+      ],
+      "sprite": "generic",
+      "shape": "pixel",
+      "size_band": "normal",
+      "visual_pixels": [
+        5,
+        9
+      ],
+      "gravity": 45,
+      "drag": 0.98,
+      "collide_buttons": true,
+      "collide_screen": true,
+      "protect_target": false,
+      "spawn_invulnerability": 0.5,
+      "texture_auto_size": true,
+      "animation_speed": 1.0,
+      "animation_loop": true,
+      "animation_interpolate": true,
+      "simulation_layer": 0,
+      "cross_layer_interactions": false,
+      "interaction_layers": "same"
+    },
+    {
+      "id": "mycelium_spores",
+      "theme_color": "#9D72A8",
+      "weight": 2,
+      "program": "burst",
+      "pulse": true,
+      "count": 30,
+      "rate": 0,
+      "face_chance": 0.74,
+      "front_ratio": 0.34,
+      "speed": [
+        35,
+        105
+      ],
+      "life": [
+        0.8,
+        1.8
+      ],
+      "sprite": "generic",
+      "shape": "pixel",
+      "size_band": "normal",
+      "visual_pixels": [
+        5,
+        9
+      ],
+      "gravity": 45,
+      "drag": 0.98,
+      "collide_buttons": true,
+      "collide_screen": true,
+      "protect_target": false,
+      "spawn_invulnerability": 0.5,
+      "texture_auto_size": true,
+      "animation_speed": 1.0,
+      "animation_loop": true,
+      "animation_interpolate": true,
+      "simulation_layer": 0,
+      "cross_layer_interactions": false,
+      "interaction_layers": "same"
+    },
+    {
+      "id": "composter_sparkle",
+      "theme_color": "#75C86B",
+      "weight": 2,
+      "program": "burst",
+      "pulse": true,
+      "count": 30,
+      "rate": 0,
+      "face_chance": 0.74,
+      "front_ratio": 0.4,
+      "speed": [
+        55,
+        150
+      ],
+      "life": [
+        0.7,
+        1.8
+      ],
+      "sprite": "firework",
+      "shape": "spark",
+      "size_band": "small",
+      "visual_pixels": [
+        4,
+        7
+      ],
+      "gravity": 58,
+      "drag": 0.982,
+      "collide_buttons": true,
+      "collide_screen": true,
+      "protect_target": false,
+      "visual_family": "firework_spark",
+      "material": "firework",
+      "spawn_invulnerability": 0.5,
+      "texture_auto_size": true,
+      "animation_speed": 1.0,
+      "animation_loop": true,
+      "animation_interpolate": true,
+      "simulation_layer": 0,
+      "cross_layer_interactions": false,
+      "interaction_layers": "same"
+    },
+    {
+      "id": "egg_crack",
+      "theme_color": "#E7D7B2",
+      "weight": 2,
+      "program": "burst",
+      "pulse": true,
+      "count": 30,
+      "rate": 0,
+      "face_chance": 0.74,
+      "front_ratio": 0.34,
+      "speed": [
+        35,
+        105
+      ],
+      "life": [
+        0.8,
+        1.8
+      ],
+      "sprite": "generic",
+      "shape": "pixel",
+      "size_band": "normal",
+      "visual_pixels": [
+        5,
+        9
+      ],
+      "gravity": 45,
+      "drag": 0.98,
+      "collide_buttons": true,
+      "collide_screen": true,
+      "protect_target": false,
+      "spawn_invulnerability": 0.5,
+      "texture_auto_size": true,
+      "animation_speed": 1.0,
+      "animation_loop": true,
+      "animation_interpolate": true,
+      "simulation_layer": 0,
+      "cross_layer_interactions": false,
+      "interaction_layers": "same"
+    },
+    {
+      "id": "small_flame",
+      "theme_color": "#FFFFFF",
+      "weight": 2,
+      "program": "burst",
+      "pulse": true,
+      "count": 30,
+      "rate": 0,
+      "face_chance": 0.74,
+      "front_ratio": 0.34,
+      "speed": [
+        35,
+        105
+      ],
+      "life": [
+        0.8,
+        1.8
+      ],
+      "sprite": "generic",
+      "shape": "pixel",
+      "size_band": "normal",
+      "visual_pixels": [
+        5,
+        9
+      ],
+      "gravity": 45,
+      "drag": 0.98,
+      "collide_buttons": true,
+      "collide_screen": true,
+      "protect_target": false,
+      "spawn_invulnerability": 0.5,
+      "texture_auto_size": true,
+      "animation_speed": 1.0,
+      "animation_loop": true,
+      "animation_interpolate": true,
+      "simulation_layer": 0,
+      "cross_layer_interactions": false,
+      "interaction_layers": "same"
+    },
+    {
+      "id": "soul_fire_flame",
+      "theme_color": "#FFFFFF",
+      "weight": 2,
+      "program": "float",
+      "pulse": true,
+      "count": 30,
+      "rate": 4,
+      "face_chance": 0.74,
+      "front_ratio": 0.34,
+      "speed": [
+        15,
+        45
+      ],
+      "life": [
+        1.1,
+        2.3
+      ],
+      "sprite": "soul_fire_flame",
+      "shape": "soul_flame",
+      "size_band": "normal",
+      "visual_pixels": [
+        7,
+        10
+      ],
+      "gravity": -20,
+      "drag": 0.965,
+      "collide_buttons": true,
+      "collide_screen": true,
+      "protect_target": false,
+      "sound": "minecraft:block.soul_sand.hit",
+      "visual_family": "soul_flame",
+      "material": "soul_fire",
+      "spawn_invulnerability": 0.5,
+      "texture_auto_size": true,
+      "animation_speed": 1.0,
+      "animation_loop": true,
+      "animation_interpolate": true,
+      "simulation_layer": 0,
+      "cross_layer_interactions": false,
+      "interaction_layers": "same"
+    },
+    {
+      "id": "sculk_charge_pop",
+      "theme_color": "#34D7C7",
+      "weight": 2,
+      "program": "burst",
+      "pulse": true,
+      "count": 30,
+      "rate": 4,
+      "face_chance": 0.74,
+      "front_ratio": 0.34,
+      "speed": [
+        25,
+        90
+      ],
+      "life": [
+        0.9,
+        2
+      ],
+      "sprite": "sculk_charge_pop",
+      "shape": "pixel",
+      "size_band": "normal",
+      "visual_pixels": [
+        7,
+        11
+      ],
+      "gravity": -5,
+      "drag": 0.97,
+      "collide_buttons": true,
+      "collide_screen": true,
+      "protect_target": false,
+      "sound": "minecraft:block.sculk_sensor.clicking",
+      "visual_family": "sculk_charge",
+      "spawn_invulnerability": 0.5,
+      "texture_auto_size": true,
+      "animation_speed": 1.0,
+      "animation_loop": true,
+      "animation_interpolate": true,
+      "simulation_layer": 0,
+      "cross_layer_interactions": false,
+      "interaction_layers": "same"
+    },
+    {
+      "id": "sculk_charge_stream",
+      "theme_color": "#FFFFFF",
+      "weight": 2,
+      "program": "float",
+      "pulse": true,
+      "count": 30,
+      "rate": 4,
+      "face_chance": 0.74,
+      "front_ratio": 0.34,
+      "speed": [
+        25,
+        90
+      ],
+      "life": [
+        0.9,
+        2
+      ],
+      "sprite": "sculk_charge",
+      "shape": "pixel",
+      "size_band": "normal",
+      "visual_pixels": [
+        7,
+        11
+      ],
+      "gravity": -5,
+      "drag": 0.97,
+      "collide_buttons": true,
+      "collide_screen": true,
+      "protect_target": false,
+      "sound": "minecraft:block.sculk_sensor.clicking",
+      "visual_family": "sculk_charge",
+      "spawn_invulnerability": 0.5,
+      "texture_auto_size": true,
+      "animation_speed": 1.0,
+      "animation_loop": true,
+      "animation_interpolate": true,
+      "simulation_layer": 0,
+      "cross_layer_interactions": false,
+      "interaction_layers": "same"
+    },
+    {
+      "id": "totem_twinkle",
+      "theme_color": "#E5D35A",
+      "weight": 2,
+      "program": "burst",
+      "pulse": true,
+      "count": 30,
+      "rate": 0,
+      "face_chance": 0.74,
+      "front_ratio": 0.4,
+      "speed": [
+        55,
+        150
+      ],
+      "life": [
+        0.7,
+        1.8
+      ],
+      "sprite": "firework",
+      "shape": "spark",
+      "size_band": "small",
+      "visual_pixels": [
+        4,
+        7
+      ],
+      "gravity": 58,
+      "drag": 0.982,
+      "collide_buttons": true,
+      "collide_screen": true,
+      "protect_target": false,
+      "sound": "minecraft:item.totem.use",
+      "visual_family": "firework_spark",
+      "material": "firework",
+      "spawn_invulnerability": 0.5,
+      "texture_auto_size": true,
+      "animation_speed": 1.0,
+      "animation_loop": true,
+      "animation_interpolate": true,
+      "simulation_layer": 0,
+      "cross_layer_interactions": false,
+      "interaction_layers": "same"
+    },
+    {
+      "id": "firework_flash",
+      "theme_color": "#FFFFFF",
+      "weight": 2,
+      "program": "pulse",
+      "pulse": true,
+      "count": 8,
+      "rate": 5,
+      "face_chance": 0.74,
+      "front_ratio": 0.34,
+      "speed": [
+        3,
+        14
+      ],
+      "life": [
+        0.22,
+        0.45
+      ],
+      "sprite": "flash",
+      "shape": "pixel",
+      "size_band": "large",
+      "visual_pixels": [
+        13,
+        18
+      ],
+      "gravity": 0,
+      "drag": 0.955,
+      "collide_buttons": false,
+      "collide_screen": true,
+      "protect_target": false,
+      "sound": "minecraft:entity.firework_rocket.launch",
+      "visual_family": "smoke",
+      "material": "smoke",
+      "spawn_invulnerability": 0.5,
+      "texture_auto_size": true,
+      "animation_speed": 1.0,
+      "animation_loop": true,
+      "animation_interpolate": true,
+      "simulation_layer": 0,
+      "cross_layer_interactions": false,
+      "interaction_layers": "same"
+    },
+    {
+      "id": "reverse_portal",
+      "theme_color": "#B65CFF",
+      "weight": 2,
+      "program": "vortex",
+      "pulse": true,
+      "count": 38,
+      "rate": 5,
+      "face_chance": 0.74,
+      "front_ratio": 0.34,
+      "speed": [
+        25,
+        95
+      ],
+      "life": [
+        1,
+        2.4
+      ],
+      "sprite": "portal",
+      "shape": "pixel",
+      "size_band": "normal",
+      "visual_pixels": [
+        6,
+        10
+      ],
+      "gravity": -3,
+      "drag": 0.972,
+      "collide_buttons": false,
+      "collide_screen": true,
+      "protect_target": false,
+      "sound": "minecraft:block.portal.ambient",
+      "visual_family": "portal_mote",
+      "material": "portal",
+      "behavior": "vortex",
+      "spawn_invulnerability": 0.5,
+      "texture_auto_size": true,
+      "animation_speed": 1.0,
+      "animation_loop": true,
+      "animation_interpolate": true,
+      "simulation_layer": 0,
+      "cross_layer_interactions": false,
+      "interaction_layers": "same"
+    },
+    {
+      "id": "explosion_puff",
+      "theme_color": "#E8E8E8",
+      "weight": 2,
+      "program": "burst",
+      "pulse": true,
+      "count": 20,
+      "rate": 0,
+      "face_chance": 0.74,
+      "front_ratio": 0.34,
+      "speed": [
+        18,
+        70
+      ],
+      "life": [
+        0.4,
+        0.9
+      ],
+      "sprite": "explosion",
+      "shape": "pixel",
+      "size_band": "normal",
+      "visual_pixels": [
+        12,
+        18
+      ],
+      "gravity": 0,
+      "drag": 0.98,
+      "collide_buttons": true,
+      "collide_screen": true,
+      "protect_target": false,
+      "sound": "minecraft:entity.generic.explode",
+      "visual_family": "explosion",
+      "spawn_invulnerability": 0.5,
+      "texture_auto_size": true,
+      "animation_speed": 1.0,
+      "animation_loop": true,
+      "animation_interpolate": true,
+      "simulation_layer": 0,
+      "cross_layer_interactions": false,
+      "interaction_layers": "same"
+    },
+    {
+      "id": "sweep_attack",
+      "theme_color": "#FFFFFF",
+      "weight": 2,
+      "program": "pulse",
+      "pulse": true,
+      "count": 12,
+      "rate": 0,
+      "face_chance": 0.74,
+      "front_ratio": 0.34,
+      "speed": [
+        8,
+        24
+      ],
+      "life": [
+        0.35,
+        0.7
+      ],
+      "sprite": "sweep",
+      "shape": "pixel",
+      "size_band": "normal",
+      "visual_pixels": [
+        13,
+        18
+      ],
+      "gravity": 0,
+      "drag": 0.98,
+      "collide_buttons": false,
+      "collide_screen": true,
+      "protect_target": false,
+      "sound": "minecraft:entity.player.attack.sweep",
+      "spawn_invulnerability": 0.5,
+      "texture_auto_size": true,
+      "animation_speed": 1.0,
+      "animation_loop": true,
+      "animation_interpolate": true,
+      "simulation_layer": 0,
+      "cross_layer_interactions": false,
+      "interaction_layers": "same"
+    },
+    {
+      "id": "firework_twinkle",
+      "theme_color": "#FFF5A8",
+      "weight": 2,
+      "program": "burst",
+      "pulse": true,
+      "count": 30,
+      "rate": 0,
+      "face_chance": 0.74,
+      "front_ratio": 0.4,
+      "speed": [
+        55,
+        150
+      ],
+      "life": [
+        0.7,
+        1.8
+      ],
+      "sprite": "firework",
+      "shape": "spark",
+      "size_band": "small",
+      "visual_pixels": [
+        4,
+        7
+      ],
+      "gravity": 58,
+      "drag": 0.982,
+      "collide_buttons": true,
+      "collide_screen": true,
+      "protect_target": false,
+      "sound": "minecraft:entity.firework_rocket.launch",
+      "visual_family": "firework_spark",
+      "material": "firework",
+      "spawn_invulnerability": 0.5,
+      "texture_auto_size": true,
+      "animation_speed": 1.0,
+      "animation_loop": true,
+      "animation_interpolate": true,
+      "simulation_layer": 0,
+      "cross_layer_interactions": false,
+      "interaction_layers": "same"
+    },
+    {
+      "id": "sneeze",
+      "theme_color": "#C6E36D",
+      "weight": 2,
+      "program": "burst",
+      "pulse": true,
+      "count": 30,
+      "rate": 0,
+      "face_chance": 0.74,
+      "front_ratio": 0.34,
+      "speed": [
+        35,
+        105
+      ],
+      "life": [
+        0.8,
+        1.8
+      ],
+      "sprite": "generic",
+      "shape": "pixel",
+      "size_band": "normal",
+      "visual_pixels": [
+        5,
+        9
+      ],
+      "gravity": 45,
+      "drag": 0.98,
+      "collide_buttons": true,
+      "collide_screen": true,
+      "protect_target": false,
+      "spawn_invulnerability": 0.5,
+      "texture_auto_size": true,
+      "animation_speed": 1.0,
+      "animation_loop": true,
+      "animation_interpolate": true,
+      "simulation_layer": 0,
+      "cross_layer_interactions": false,
+      "interaction_layers": "same"
+    }
+  ]
+}
